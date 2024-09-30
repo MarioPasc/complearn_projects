@@ -69,6 +69,15 @@ where $d(x_{g'}, x_{g''})$ represents the distance between the expression profil
 - **Recommendations for K-means**:
   - The paper highlights that K-means is **sensitive to the choice of initial cluster centers**. In some cases, using poor initial centers (such as those from UPGMA) led to the algorithm failing to converge well. The authors recommend careful selection of initial centers, suggesting that another clustering algorithm like **Diana** can be used to find better starting points for K-means.
 
+> "... K-means is a popular algorithm that uses
+a reasonable objective criterion. However, it could be
+sensitive to the choice of the initial cluster centers. For the
+simulated data sets, we have observed that the K-means
+algorithm failed when the initial centers were taken to be
+the cluster means obtained using UPGMA, and, subse-
+quently, we had used the cluster means from Diana for
+it to work..."
+
 - **Performance Results**:
   - The K-means algorithm performed **reasonably well** but was not the best performer compared to some other methods like Diana. In particular, K-means clusters had a **total distance of 12.48** from the model profiles based on the seven known temporal classes (see Table 1 of the paper). This was **better** than hierarchical clustering but **worse** than Diana (which had the closest match at 10.47).
   - **Validation Measures**: In terms of the three validation measures:
