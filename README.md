@@ -1,3 +1,3 @@
-# Computational Learning Project
+# Computational Learning Projects
 
 This repository includes all the projects that were made in order to fulfill any task from the course `Computational Learning`. 
